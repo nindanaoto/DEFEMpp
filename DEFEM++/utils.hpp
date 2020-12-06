@@ -1,4 +1,4 @@
-namespace DEFMpp{
+namespace DEFEMpp{
     //https://stackoverflow.com/a/1506856
     template<int X, int P>
     struct Pow
@@ -15,4 +15,10 @@ namespace DEFMpp{
     {
         enum { result = X };
     };
+
+    constexpr unsigned int factorial(unsigned int x){
+        unsigned int res = 1;
+        for(unsigned int i = 2;i<=x;i++) res*=i;
+        return res;
+    }
 }
