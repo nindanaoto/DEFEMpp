@@ -10,6 +10,7 @@
 #include "../utils.hpp"
 namespace DEFEMpp{
     namespace Quadrature{
+        //Supported Cell Geometry
         enum class cell_type{triangle,tetrahedron};
         
         constexpr unsigned int cell_dim(cell_type cell){
